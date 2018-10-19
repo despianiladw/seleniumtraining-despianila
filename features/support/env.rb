@@ -117,7 +117,7 @@ app_host, server_host, server_port, project, retry_times = case ENV['ENVIRONMENT
                                               when 'develop-stage'
                                                 ['https://mokapos.com', 'mokapos.com', '80', nil, 1]
                                               else
-                                                ['https://mokapos.com', 'mokapos.com', '80', nil, 1]
+                                                ['https://staging.mokapos.com', 'mokapos.com', '80', nil, 1]
                                               end
 
 
@@ -135,7 +135,7 @@ end
 
 Before '@javascript' do |scenario|
   $scenario_name = scenario.feature.name
-  page.driver.browser.manage.window.resize_to(1366, 768)
+  page.driver.browser.manage.window.maximize
 end
 
 Capybara.register_driver :selenium do |app|

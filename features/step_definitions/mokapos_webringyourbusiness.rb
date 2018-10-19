@@ -34,6 +34,10 @@ When("user see footer support") do
   page.should have_css('#mainFooter>div>div>div:nth-child(1)>div:nth-child(3)>div>h3')
 end
 
-Then("should click video") do
+When("should click video") do
   find('#watchnowbuttonindex').click
+end
+
+Then("play video") do
+  page.should have_css('#videoModal>div>div>div>div>iframe')
 end

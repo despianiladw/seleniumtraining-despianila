@@ -12,4 +12,5 @@ Scenario: mokapos
  When user see trial
  When user see footer about
  When user see footer support
- Then should click video
+ When should click video
+ Then play video

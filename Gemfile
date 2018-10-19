@@ -60,3 +60,6 @@ gem 'rspec-retry', group: :test # Unlike rspec, this doesn't need to be included
 gem 'rspec-page-regression'
 gem 'dotenv-rails'
 gem 'pry'
+gem 'show_me_the_cookies'
+gem 'smarter_csv'
+gem 'curb', '~> 0.9.6'
